@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html><head><meta charset="utf-8"><title>Mints.Statics</title><link rel="stylesheet" href="Agda.css"></head><body><pre class="Agda"><a id="1" class="Symbol">{-#</a> <a id="5" class="Keyword">OPTIONS</a> <a id="13" class="Pragma">--without-K</a> <a id="25" class="Pragma">--safe</a> <a id="32" class="Symbol">#-}</a>
+
+<a id="37" class="Comment">-- This module defines the syntax and typing rule of Mints</a>
+<a id="96" class="Comment">--</a>
+<a id="99" class="Comment">-- The syntax of Mints contains variables, natural numbers, dependent functions and □ modality</a>
+<a id="194" class="Comment">-- with explicit substitutions.</a>
+<a id="226" class="Comment">-- We use de Bruijn indices for name representation and employ β-η normal forms.</a>
+<a id="307" class="Comment">--</a>
+<a id="310" class="Comment">-- We have two sets of typing rules in this module (there is another set Mints.Soundness.Typing):</a>
+<a id="408" class="Comment">--</a>
+<a id="411" class="Comment">-- Mints.Statics.Concise: the true and golden set of typing rules</a>
+<a id="477" class="Comment">-- Mints.Statics.Full: an enriched set of typing rules which</a>
+<a id="538" class="Comment">--     1. is used to prove syntactic properties of Concise, and</a>
+<a id="602" class="Comment">--     2. serves as a &quot;bridge&quot; set of rules which connects Concise to yet another set of typing rules,</a>
+<a id="705" class="Comment">--        Mints.Soundness.Typing, which is required to overcome some technicalities encountered in the</a>
+<a id="808" class="Comment">--        soundness proof.</a>
+<a id="835" class="Comment">--</a>
+<a id="838" class="Comment">-- Concise and Full are proved equivalent in Mints.Statics.Equiv.</a>
+<a id="904" class="Keyword">module</a> <a id="911" href="Mints.Statics.html" class="Module">Mints.Statics</a> <a id="925" class="Keyword">where</a>
+
+<a id="932" class="Comment">-- The Concise set of rules are the gold standard rules.</a>
+<a id="989" class="Keyword">open</a> <a id="994" class="Keyword">import</a> <a id="1001" href="Mints.Statics.Concise.html" class="Module">Mints.Statics.Concise</a> <a id="1023" class="Keyword">public</a>
+</pre></body></html>
