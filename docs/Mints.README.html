@@ -37,41 +37,62 @@
 <a id="1354" class="Comment">-- Syntax, typing rules and equivalence rules</a>
 <a id="1400" class="Keyword">import</a> <a id="1407" href="Mints.Statics.html" class="Module">Mints.Statics</a>
 
-<a id="1422" class="Comment">-- Definitions of the untyped semantic domain which the syntax is evaluated to</a>
-<a id="1501" class="Keyword">import</a> <a id="1508" href="Mints.Semantics.Domain.html" class="Module">Mints.Semantics.Domain</a>
+<a id="1422" class="Comment">-- Properties of the syntactic judgments</a>
+<a id="1463" class="Keyword">import</a> <a id="1470" href="Mints.Statics.Properties.html" class="Module">Mints.Statics.Properties</a>
 
-<a id="1532" class="Comment">-- Evaluation from syntactic terms to the domain model</a>
-<a id="1587" class="Keyword">import</a> <a id="1594" href="Mints.Semantics.Evaluation.html" class="Module">Mints.Semantics.Evaluation</a>
+<a id="1496" class="Comment">-------------------------------------------------</a>
+<a id="1546" class="Comment">-- Definitions of Semantics and the NbE algorithm</a>
 
-<a id="1622" class="Comment">-- Read from the domain model back to the syntax as normal/neutral terms</a>
-<a id="1695" class="Keyword">import</a> <a id="1702" href="Mints.Semantics.Readback.html" class="Module">Mints.Semantics.Readback</a>
+<a id="1597" class="Comment">-- Definitions of the untyped semantic domain which the syntax is evaluated to</a>
+<a id="1676" class="Keyword">import</a> <a id="1683" href="Mints.Semantics.Domain.html" class="Module">Mints.Semantics.Domain</a>
 
-<a id="1728" class="Comment">-- PER model for the semantics</a>
-<a id="1759" class="Keyword">import</a> <a id="1766" href="Mints.Semantics.PER.html" class="Module">Mints.Semantics.PER</a>
+<a id="1707" class="Comment">-- Evaluation from syntactic terms to the domain model</a>
+<a id="1762" class="Keyword">import</a> <a id="1769" href="Mints.Semantics.Evaluation.html" class="Module">Mints.Semantics.Evaluation</a>
 
-<a id="1787" class="Comment">------------------------------------</a>
-<a id="1824" class="Comment">-- Completeness of the NbE algorithm</a>
+<a id="1797" class="Comment">-- Read from the domain model back to the syntax as normal/neutral terms</a>
+<a id="1870" class="Keyword">import</a> <a id="1877" href="Mints.Semantics.Readback.html" class="Module">Mints.Semantics.Readback</a>
 
-<a id="1862" class="Comment">-- Definitions of semantic judgments for completeness</a>
-<a id="1916" class="Keyword">import</a> <a id="1923" href="Mints.Completeness.LogRel.html" class="Module">Mints.Completeness.LogRel</a>
+<a id="1903" class="Comment">-- PER model for the semantics</a>
+<a id="1934" class="Keyword">import</a> <a id="1941" href="Mints.Semantics.PER.html" class="Module">Mints.Semantics.PER</a>
 
-<a id="1950" class="Comment">-- Fundamental theorems of semantic judgments</a>
-<a id="1996" class="Keyword">import</a> <a id="2003" href="Mints.Completeness.Fundamental.html" class="Module">Mints.Completeness.Fundamental</a> <a id="2034" href="Mints.README.html#1314" class="Postulate">fext</a> as <a id="Fundamental"></a><a id="2042" href="Mints.README.html#2042" class="Module">Fundamental</a>
+<a id="1962" class="Comment">-- Realizability for the semantics</a>
+<a id="1997" class="Keyword">import</a> <a id="2004" href="Mints.Semantics.Realizability.html" class="Module">Mints.Semantics.Realizability</a>
 
-<a id="2055" class="Comment">-- Proof of the completeness theorem</a>
-<a id="2092" class="Keyword">import</a> <a id="2099" href="Mints.Completeness.html" class="Module">Mints.Completeness</a> <a id="2118" href="Mints.README.html#1314" class="Postulate">fext</a> as <a id="Completeness"></a><a id="2126" href="Mints.README.html#2126" class="Module">Completeness</a>
+<a id="2035" class="Comment">------------------------------------</a>
+<a id="2072" class="Comment">-- Completeness of the NbE algorithm</a>
 
-<a id="2140" class="Comment">---------------------------------</a>
-<a id="2174" class="Comment">-- Soundness of the NbE algorithm</a>
+<a id="2110" class="Comment">-- Definitions of semantic judgments for completeness</a>
+<a id="2164" class="Keyword">import</a> <a id="2171" href="Mints.Completeness.LogRel.html" class="Module">Mints.Completeness.LogRel</a>
 
-<a id="2209" class="Comment">-- Definitions of the gluing models and semantic judgments for soundness</a>
-<a id="2282" class="Keyword">import</a> <a id="2289" href="Mints.Soundness.LogRel.html" class="Module">Mints.Soundness.LogRel</a>
+<a id="2198" class="Comment">-- Fundamental theorems of semantic judgments</a>
+<a id="2244" class="Keyword">import</a> <a id="2251" href="Mints.Completeness.Fundamental.html" class="Module">Mints.Completeness.Fundamental</a> <a id="2282" href="Mints.README.html#1314" class="Postulate">fext</a> as <a id="Fundamental"></a><a id="2290" href="Mints.README.html#2290" class="Module">Fundamental</a>
 
-<a id="2313" class="Comment">-- Proof of the soundness theorem</a>
-<a id="2347" class="Keyword">import</a> <a id="2354" href="Mints.Soundness.html" class="Module">Mints.Soundness</a> <a id="2370" href="Mints.README.html#1314" class="Postulate">fext</a> as <a id="Soundness"></a><a id="2378" href="Mints.README.html#2378" class="Module">Soundness</a>
+<a id="2303" class="Comment">-- Proof of the completeness theorem</a>
+<a id="2340" class="Keyword">import</a> <a id="2347" href="Mints.Completeness.html" class="Module">Mints.Completeness</a> <a id="2366" href="Mints.README.html#1314" class="Postulate">fext</a> as <a id="Completeness"></a><a id="2374" href="Mints.README.html#2374" class="Module">Completeness</a>
 
-<a id="2389" class="Comment">---------------------------------</a>
-<a id="2423" class="Comment">-- Consequences of completeness and soundness</a>
+<a id="2388" class="Comment">-- Consequences of completeness</a>
+<a id="2420" class="Keyword">import</a> <a id="2427" href="Mints.Completeness.Consequences.html" class="Module">Mints.Completeness.Consequences</a> <a id="2459" href="Mints.README.html#1314" class="Postulate">fext</a> as <a id="Consequence"></a><a id="2467" href="Mints.README.html#2467" class="Module">Consequence</a>
 
-<a id="2470" class="Keyword">import</a> <a id="2477" href="Mints.Consequences.html" class="Module">Mints.Consequences</a> <a id="2496" href="Mints.README.html#1314" class="Postulate">fext</a> as <a id="Consequence"></a><a id="2504" href="Mints.README.html#2504" class="Module">Consequence</a>
+<a id="2480" class="Comment">---------------------------------</a>
+<a id="2514" class="Comment">-- Soundness of the NbE algorithm</a>
+
+<a id="2549" class="Comment">-- Definitions of the gluing models and semantic judgments for soundness</a>
+<a id="2622" class="Keyword">import</a> <a id="2629" href="Mints.Soundness.LogRel.html" class="Module">Mints.Soundness.LogRel</a>
+
+<a id="2653" class="Comment">-- Realizability for the gluing model</a>
+<a id="2691" class="Keyword">import</a> <a id="2698" href="Mints.Soundness.Realizability.html" class="Module">Mints.Soundness.Realizability</a>
+
+<a id="2729" class="Comment">-- Cumulativity for the gluing model</a>
+<a id="2766" class="Keyword">import</a> <a id="2773" href="Mints.Soundness.Cumulativity.html" class="Module">Mints.Soundness.Cumulativity</a>
+
+<a id="2803" class="Comment">-- Fundamental theorems of semantic judgments for soundness</a>
+<a id="2863" class="Keyword">import</a> <a id="2870" href="Mints.Soundness.Fundamental.html" class="Module">Mints.Soundness.Fundamental</a> <a id="2898" href="Mints.README.html#1314" class="Postulate">fext</a> as <a id="Fundamental′"></a><a id="2906" href="Mints.README.html#2906" class="Module">Fundamental′</a>
+
+<a id="2920" class="Comment">-- Proof of the soundness theorem</a>
+<a id="2954" class="Keyword">import</a> <a id="2961" href="Mints.Soundness.html" class="Module">Mints.Soundness</a> <a id="2977" href="Mints.README.html#1314" class="Postulate">fext</a> as <a id="Soundness"></a><a id="2985" href="Mints.README.html#2985" class="Module">Soundness</a>
+
+<a id="2996" class="Comment">---------------------------------</a>
+<a id="3030" class="Comment">-- Consequences of soundness</a>
+
+<a id="3060" class="Keyword">import</a> <a id="3067" href="Mints.Consequences.html" class="Module">Mints.Consequences</a> <a id="3086" href="Mints.README.html#1314" class="Postulate">fext</a> as <a id="Consequence′"></a><a id="3094" href="Mints.README.html#3094" class="Module">Consequence′</a>
 </pre></body></html>
